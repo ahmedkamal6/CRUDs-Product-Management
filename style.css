@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(52, 28, 56);
+    border-radius: 10px;
+  }
+body{
+    background:radial-gradient(circle , #94bbe9 , #eeaeca);
+    
+    background-repeat: no-repeat;
+    color: white;  
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+.head{
+    text-shadow: 1px 1px 1px black;
+}
+h1,h3{
+    text-align: center;
+}
+h3{
+    margin-bottom: 30px;
+}
+main{
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+.input{
+    width: 90%;
+}
+input{
+    background-color: rgb(42, 42, 42);
+    color:white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    height:20px;
+    margin: 10px;
+}
+input:focus{
+    transform: scale(1.02);
+    background-color: black;
+    border: black;
+}
+span{
+    background-color: rgb(101, 36, 36);
+    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    line-height: 2px;
+}
+input[type=text]{
+    width: 98%;
+}
+#count{
+    width: 98%;
+}
+button{
+    background-color: rgb(72, 32, 109);
+    color: white;
+    box-shadow: 0 0 10px rgb(72, 32, 109);
+    text-align: center;
+    padding :5px;
+    border-radius: 20px;
+    font-weight: 700;
+    height: 40px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px;
+
+}
+button:hover{
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+    background-color: rgb(120, 57, 178);
+}
+#create{
+    width: 100%;
+}
+#searchTitle,#searchCategory{
+    width: 40%;
+}
+#searchCategory{
+    float: right;
+}
+.output{
+    border-radius: 5px;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+tr{
+    padding: 2px;
+}
+td,th{
+    padding: 5px;
+}
+#update{
+    width: 100%;
+}
+#delete
+{
+    width: 100%;
+}
+@media screen and (min-width:1440px){
+    main{
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .output{
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 90%;
+        padding-right: 20px;
+        height: 520px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:768px) {
+    main{
+        width: 100%;
+    }
+}
